@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		28B939372D05D6D900B9B5EE /* unigame in Frameworks */ = {isa = PBXBuildFile; productRef = 28B939362D05D6D900B9B5EE /* unigame */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		287EA4EC2D036FF4002CB055 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -56,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28B939372D05D6D900B9B5EE /* unigame in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +112,6 @@
 			);
 			name = UnigameTest;
 			packageProductDependencies = (
-				28B939362D05D6D900B9B5EE /* unigame */,
 			);
 			productName = UnigameTest;
 			productReference = 287EA4DB2D036FF1002CB055 /* UnigameTest.app */;
@@ -576,13 +570,6 @@
 			relativePath = ../../../unigame;
 		};
 /* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		28B939362D05D6D900B9B5EE /* unigame */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = unigame;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 287EA4D32D036FF1002CB055 /* Project object */;
 }

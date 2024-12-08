@@ -7,4 +7,5 @@ DerivedData/
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
 Secret.swift
-project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+UnigameTest.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+

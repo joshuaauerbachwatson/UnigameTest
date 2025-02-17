@@ -19,7 +19,7 @@ import unigame
 import SwiftUI
 
 class TestGameHandle: GameHandle {
-    var tokenProvider: any TokenProvider = Auth0TokenProvider()
+    var tokenProvider: (any TokenProvider)? = Auth0TokenProvider()
     
     var numPlayerRange = 1...2
     

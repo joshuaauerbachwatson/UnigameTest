@@ -35,9 +35,22 @@
 		287EA4F52D036FF4002CB055 /* UnigameTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnigameTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		28B2CA912D63750700186930 /* Exceptions for "UnigameTest" folder in "UnigameTest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 287EA4DA2D036FF1002CB055 /* UnigameTest */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		287EA4DD2D036FF1002CB055 /* UnigameTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				28B2CA912D63750700186930 /* Exceptions for "UnigameTest" folder in "UnigameTest" target */,
+			);
 			path = UnigameTest;
 			sourceTree = "<group>";
 		};
@@ -423,6 +436,8 @@
 				DEVELOPMENT_TEAM = 5A8RHYSHFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnigameTest/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Contact nearby devices for app test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +469,8 @@
 				DEVELOPMENT_TEAM = 5A8RHYSHFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnigameTest/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Contact nearby devices for app test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

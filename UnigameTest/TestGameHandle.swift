@@ -23,6 +23,8 @@ class TestGameHandle: GameHandle {
     
     var tokenProvider: (any TokenProvider)? = Auth0TokenProvider()
     
+    var helpHandle: any HelpHandle = NoHelpProvided()
+    
     var numPlayerRange = 1...2
     
     func reset() {

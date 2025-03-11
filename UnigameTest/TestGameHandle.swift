@@ -25,6 +25,9 @@ class TestGameHandle: GameHandle {
     
     var helpHandle: any HelpHandle = NoHelpProvided()
     
+    // Vary the following to explore scoring rules variations
+    var initialScoring: unigame.Scoring = .Open
+    
     var numPlayerRange = 1...2
     
     func reset() {

@@ -28,7 +28,7 @@ class TestGameHandle: GameHandle {
     // Vary the following to explore scoring rules variations
     var initialScoring: unigame.Scoring = .Open
     
-    var numPlayerRange = 1...2
+    var numPlayerRange = 1...4
     
     func reset() {
         // No-op

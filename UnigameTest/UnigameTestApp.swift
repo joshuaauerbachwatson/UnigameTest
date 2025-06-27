@@ -22,7 +22,7 @@ struct UnigameTestApp: App {
     @State private var model = UnigameModel(gameHandle: TestGameHandle.self)
     var body: some Scene {
         WindowGroup {
-            unigame.ContentView()
+            unigame.ContentView<TestGameHandle>()
                 .environment(model)
         }
     }

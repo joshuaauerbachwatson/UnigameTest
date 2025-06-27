@@ -19,7 +19,7 @@ import unigame
 import SwiftUI
 
 final class TestGameHandle: GameHandle {
-    weak var model: UnigameModel?
+    weak var model: UnigameModel<TestGameHandle>?
     
     var tokenProvider: (any TokenProvider)? = Auth0TokenProvider()
     

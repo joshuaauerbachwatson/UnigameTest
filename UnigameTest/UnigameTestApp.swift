@@ -19,7 +19,7 @@ import unigame
 
 @main
 struct UnigameTestApp: App {
-    @State private var model = UnigameModel(gameHandle: TestGameHandle.self)
+    @State private var model = TestGameHandle.makeModel()
     var body: some Scene {
         WindowGroup {
             unigame.ContentView<TestGameHandle>()

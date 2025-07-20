@@ -18,37 +18,37 @@ import Foundation
 import unigame
 import SwiftUI
 
-final class TestGameHandle: GameHandle {
-    static func makeModel() -> unigame.UnigameModel<TestGameHandle> {
+public final class TestGameHandle: GameHandle {
+    public static func makeModel() -> unigame.UnigameModel<TestGameHandle> {
         return UnigameModel(gameHandle: TestGameHandle())
     }
 
-    weak var model: UnigameModel<TestGameHandle>?
+    public weak var model: UnigameModel<TestGameHandle>?
     
-    var helpHandle: any HelpHandle = NoHelpProvided()
+    public var helpHandle: any HelpHandle = NoHelpProvided()
     
     // Vary the following to explore scoring rules variations
-    var initialScoring: unigame.Scoring = .Open
+    public var initialScoring: unigame.Scoring = .Open
     
-    var numPlayerRange = 1...4
+    public var numPlayerRange = 1...4
     
-    func reset() {
+    public func reset() {
         // No-op
     }
     
-    func stateChanged(_ data: [UInt8]) -> (any Error)? {
+    public func stateChanged(_ data: [UInt8]) -> (any Error)? {
         // TODO
         return nil
     }
     
-    func encodeState(duringSetup: Bool) -> [UInt8] {
+    public func encodeState(duringSetup: Bool) -> [UInt8] {
         // TODO
         return []
     }
     
-    var setupView: (any View)? = nil
+    public var setupView: (any View)? = nil
     
-    var playingView: any View = TestPlayingView()
+    public var playingView: any View = TestPlayingView()
     
-    var appId = "testunigame"
+    public var appId = "testunigame"
 }

@@ -50,5 +50,7 @@ public final class TestGameHandle: GameHandle {
     
     public var playingView: any View = TestPlayingView()
     
-    public var appId = "testunigame"
+    public var gameId = "testunigame"
+    
+    public var gameName = "Test Unigame"
 }

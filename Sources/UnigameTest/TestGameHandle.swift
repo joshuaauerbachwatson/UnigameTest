@@ -19,10 +19,10 @@ import unigame
 import SwiftUI
 
 public final class TestGameHandle: GameHandle {
-    public static func makeModel() -> unigame.UnigameModel<TestGameHandle> {
-        return UnigameModel(gameHandle: TestGameHandle())
-    }
-
+    public static var instance: UnigameModel<TestGameHandle>? = nil
+    
+    public init() {}
+    
     public weak var model: UnigameModel<TestGameHandle>?
     
     public var helpHandle: any HelpHandle = NoHelpProvided()
@@ -32,8 +32,8 @@ public final class TestGameHandle: GameHandle {
     
     public var numPlayerRange = 1...4
     
-    public func reset() {
-        // No-op
+    public func endGame() {
+        Self.instance = nil
     }
     
     public func stateChanged(_ data: [UInt8]) -> (any Error)? {
